@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowser Testing]" parallel="tests">
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.spinportal.admin.testscript.TestLoginPage">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="startProcess"/>
+          <include name="endProcess"/>
+        </methods>
+      </class> <!-- com.spinportal.admin.testscript.TestLoginPage -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [CrossBrowser Testing] -->

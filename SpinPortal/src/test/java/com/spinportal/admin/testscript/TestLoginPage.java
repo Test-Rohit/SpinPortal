@@ -23,11 +23,16 @@ public class TestLoginPage extends BaseUtil {
 		setDesiredBrowser(browser,"http://automationpractice.com/index.php");
 	}
 	
-	@Test()
+	@Test(priority=0)
 	public void launchBrowser() throws Exception {
 		customer = new CustomerPageUI(driver);
 		customer.customerRegisteration();
 		
+	}
+	
+	@Test(priority=1)
+	public void demo() {
+		System.out.println("Demo...");
 	}
 	
 	@AfterClass

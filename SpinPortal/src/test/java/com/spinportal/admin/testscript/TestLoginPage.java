@@ -35,6 +35,11 @@ public class TestLoginPage extends BaseUtil {
 		System.out.println("Demo...");
 	}
 	
+	@Test(priority=2)
+	public void test() {
+		System.out.println("Test...");
+	}
+	
 	@AfterClass
 	public void endProcess() {
 		
